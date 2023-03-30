@@ -1,10 +1,8 @@
 filename = 'learing_python.txt'
-f = open(filename)
-with open(filename) as file:
+with open(filename,'r') as file:
     contents = file.read()
-print(contents)
-with open(filename) as file:
     lines = file.readlines()
+print(contents)
 for line in lines:
     print(line.rstrip())
 
